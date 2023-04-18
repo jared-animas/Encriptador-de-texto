@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<head>
+		<title> Encriptador de texto </title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+
+	<body>
+		<h1> Encriptador de texto </h1>
+		<form>
+			<div class="CuadrosTexto">
+				<div class="Texto-Entrada">
+					<textarea id="Entrada" placeholder="Ingrese un texto a trabajar... "></textarea>
+					<input  type="button" id="Pegar"  class="boton" value="Pegar" />
+				</div>
+				<div class="Texto-Salida">
+					<img id="Sin-Texto"  src="SinTexto.png" alt="Sin-Texto" >
+                    <textarea id="Salida" style="display: none;" ></textarea>
+					<input  type="button" id="Copiar"  class="boton" value="Copiar" style="display: none;" />
+                </div>
+			</div>
+			<div class="botones" >
+				<input  type="button" id="Codificar"  class="boton" value="Codificar" />
+				<input  type="button" id="Decodificar"  class="boton"value="Decodificar" />
+				<br />
+				<input type="reset" id="Limpiar" class="boton"/>
+			</div>
+			<div class="presentacion">
+				<label class="Nombre">Pagina elaborada por: Jared Antelmo Animas Grimaldo </label>
+				<br>
+				<label>Linkedin:</label>
+				<a href="https://www.linkedin.com/in/jared-animas/"><img style="margin: auto;" height="20px" src="IconoLinkedin.png" alt="Linkedin"> jared-animas</a>
+				<br>
+				<label>Github:</label>
+				<a href="https://github.com/jared-animas"><img style="margin: auto;" height="20px" src="IconoGithub.png" alt="Github"> jared-animas</a>
+				<br>
+				<label>#challengeonecodificador5</label>
+				</label>
+			</div>
+			
+		</form>
+	<script src="codigo.js"></script>
+	</body>
+
+</html>

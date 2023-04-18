@@ -1,0 +1,141 @@
+
+*{
+    font-family: serif;
+    text-align: center;
+}
+
+body{
+    display: inline-flex ;
+    flex-direction: column;
+}
+h1{
+    margin: 10px;
+    display: inline-flex ;
+    flex-direction: column;
+    padding: 2px;
+    background-color: rgba(0, 132, 255, 0.137);  
+    border-radius: 15px;
+    border: 2px solid #ff00ff48;
+}
+
+form{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #ff00001e;
+    box-shadow: inset rgba(255, 3, 3, 0.123) 0px 0px 15px 15px;
+    border: 2px solid #ff000096;
+    border-radius: 15px;
+    align-items: stretch;
+}
+.CuadrosTexto{
+    margin: 10px;
+    display: inline-flex ;
+    overflow: auto;
+    padding: 10px;
+    background-color: rgb(237, 246, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(54, 0, 248);
+}
+
+.Texto-Entrada{
+    display: inline-flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(54, 0, 248);
+    min-width: 300px;
+}
+
+#Entrada{
+    padding: 5px;
+    margin: 5px;
+    text-align: justify;
+    font-size: 20px;
+    min-width: 300px;
+    min-height: 420px;
+    border: none;
+}
+
+.Texto-Salida{
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(54, 0, 248);
+    min-width: 320px;
+    height: 500px;
+    align-items: stretch;
+}
+#Salida{
+    overflow: hidden;
+    overflow: auto;
+    padding: 5px;
+    margin: 5px;
+    text-align: justify;
+    font-size: 20px;
+    min-width: 300px;
+    min-height: 420px;
+    border: none;
+}
+#Sin-Texto{
+    object-fit: cover;
+    object-position: -1em;
+    width: 110%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.botones,.presentacion{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(201, 244, 252);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(54, 0, 248);
+}
+
+.boton{
+    margin: 5px;
+    background: linear-gradient(to right,#196BCA ,#6433E0);
+    background-color: #196BCA;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px 0px #2D2D2D;
+   }
+
+   .boton span{
+    margin-right: 15px;
+    display: block;
+    width: 29px;
+    height: 29px;
+    transform: rotate(0deg);
+   }
+
+   .boton:hover{
+    background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+    background-color: #2365d8;
+   }
+
+   .boton:active{
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+   }
