@@ -15,13 +15,11 @@ function mostrar() { //muestra el Textarea donde se imprime el texto codificado/
     document.getElementById("Salida").style.display = "initial";
 }
   
-
 copiar.addEventListener("click", () => {    //boton para copiar texto
     // el método select es utilizado para seleccionar el contenido de un campo de texto
     TextoSalida.select();
         // el método document.execCommand("copy") copia el texto seleccionado al portapapeles
         let exito = document.execCommand("copy");
-        console.log('funca');
 });
  
 pegar.addEventListener("click", () => {
@@ -70,20 +68,10 @@ function CodificarTexto(texto) {
         }
 
         //condicional para modificar las letras del alfabeto
-        if (TextoEntrada.value[index]=="a") {
-           texto2[index] = "ai";    
-        }
-        if (TextoEntrada.value[index]=="e") {
-           texto2[index] = "enter";
-        }
-        if (TextoEntrada.value[index]=="i") {
-           texto2[index] = "imes";
-        }
-        if (TextoEntrada.value[index]=="o") {
-          texto2[index] = "ober";
-        }
-        if (TextoEntrada.value[index]=="u") {
-         texto2[index] = "ufat";
+        for (let i = 0; i <= letras.length; i++) {
+            if (TextoEntrada.value[index]==letras[i]) {
+                texto2[index] = cambio[i];
+             }
         }
     }
     resultado = texto2.toString();      //convertir array a cadena de texto
@@ -100,4 +88,3 @@ function DecodificarTexto(texto) {
     resultado = resultado.replaceAll("ufat","u");
     resultado = resultado.replaceAll("ober","o");
 }
-
