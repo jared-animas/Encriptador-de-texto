@@ -1,44 +1,38 @@
-
-*{
+* {
     font-family: serif;
     text-align: center;
 }
 
-body{
-    display: inline-flex ;
+body {
+    margin: 0cm;
+    display: flex;
+    align-items: stretch;
     flex-direction: column;
+    flex-wrap: wrap;
 }
-h1{
-    margin: 10px;
-    display: inline-flex ;
-    flex-direction: column;
-    padding: 2px;
-    background-color: rgba(0, 132, 255, 0.137);  
-    border-radius: 15px;
+
+h1 {
+    margin: 0cm;
+    padding: 0.5em;
+    min-width: fit-content;
+    background-color: rgba(0, 132, 255, 0.137);
     border: 2px solid #ff00ff48;
 }
 
-form{
-    display: inline-flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: #ff00001e;
-    box-shadow: inset rgba(255, 3, 3, 0.123) 0px 0px 15px 15px;
-    border: 2px solid #ff000096;
-    border-radius: 15px;
-    align-items: stretch;
-}
-.CuadrosTexto{
-    margin: 10px;
-    display: inline-flex ;
+.CuadrosTexto {
+    margin: .1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     overflow: auto;
     padding: 10px;
     background-color: rgb(237, 246, 255);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(54, 0, 248);
+    justify-content: center;
 }
 
-.Texto-Entrada{
+.Texto-Entrada {
     display: inline-flex;
     flex-direction: column;
     overflow: auto;
@@ -49,19 +43,23 @@ form{
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(54, 0, 248);
     min-width: 300px;
+    justify-content: space-between;
 }
 
-#Entrada{
+#Entrada {
+    flex: content;
+    overflow: overlay;
+    overflow-anchor: auto;
     padding: 5px;
     margin: 5px;
     text-align: justify;
     font-size: 20px;
     min-width: 300px;
-    min-height: 420px;
+    max-height: 420px;
     border: none;
 }
 
-.Texto-Salida{
+.Texto-Salida {
     display: inline-flex;
     flex-direction: column;
     overflow: hidden;
@@ -75,7 +73,8 @@ form{
     height: 500px;
     align-items: stretch;
 }
-#Salida{
+
+#Salida {
     overflow: hidden;
     overflow: auto;
     padding: 5px;
@@ -86,7 +85,8 @@ form{
     min-height: 420px;
     border: none;
 }
-#Sin-Texto{
+
+#Sin-Texto {
     object-fit: cover;
     object-position: -1em;
     width: 110%;
@@ -94,18 +94,32 @@ form{
     border-radius: 10px;
 }
 
-.botones,.presentacion{
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    background-color: rgb(201, 244, 252);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(54, 0, 248);
+.presentacion {
+    font-size: 1.2em;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px auto;
+    padding: 0.5em;
+    min-width: fit-content;
+    background-color: rgba(0, 132, 255, 0.137);
+    border: 2px solid #ff00ff48;
 }
 
-.boton{
+.botones {
+    margin: 10px;
+    display: flex;
+    font-size: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.boton {
     margin: 5px;
-    background: linear-gradient(to right,#196BCA ,#6433E0);
+    background: linear-gradient(to right, #196BCA, #6433E0);
     background-color: #196BCA;
     color: #fff;
     font-family: Verdana;
@@ -120,22 +134,22 @@ form{
     justify-content: center;
     align-items: center;
     box-shadow: inset 0px 0px 10px 0px #2D2D2D;
-   }
+}
 
-   .boton span{
+.boton span {
     margin-right: 15px;
     display: block;
     width: 29px;
     height: 29px;
     transform: rotate(0deg);
-   }
+}
 
-   .boton:hover{
-    background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+.boton:hover {
+    background: linear-gradient(to right, #5482d0, #7d5ee3);
     background-color: #2365d8;
-   }
+}
 
-   .boton:active{
+.boton:active {
     transform: scale(0.95);
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
-   }
+}
