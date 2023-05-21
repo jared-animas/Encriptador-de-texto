@@ -31,7 +31,6 @@ h1 {
 .Texto-Entrada {
     padding: 10px;
     display: inline-flex;
-    overflow: auto;
     margin: 10px;
     font-size: 1.2em;
     color: rgb(0, 0, 0);
@@ -45,13 +44,11 @@ h1 {
 
 #Entrada {
     flex: content;
-    overflow: overlay;
-    overflow-anchor: auto;
     padding: 5px;
     margin: 5px;
     text-align: justify;
     font-size: 1.2em;
-    width: 300px;
+    width: auto;
     max-height: 420px;
     border: none;
 }
@@ -60,7 +57,7 @@ h1 {
     padding: 10px;
     display: inline-flex;
     flex-direction: column;
-    overflow: auto;
+    overflow: hidden;
     margin: 10px;
     font-size: 1.2em;
     color: rgb(0, 0, 0);
@@ -90,10 +87,9 @@ h1 {
 
 #Sin-Texto {
     object-fit: cover;
-    object-position: -1em; 
-    width: 110%;
-    height: 80%;
-    border-radius: 10px;
+    object-position: -20px;
+    width: 340px;
+    height: 100%;
 }
 
 .presentacion {

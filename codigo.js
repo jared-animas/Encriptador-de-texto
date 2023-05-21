@@ -16,6 +16,7 @@ function mostrar() {// muestra el Textarea donde se imprime el texto codificado/
     document.getElementById("Salida").style.display = "initial";
   } else {
     document.getElementById("Sin-Texto").style.display = "initial";
+    document.getElementById("Copiar").style.display = "none";
   }
 }
 
