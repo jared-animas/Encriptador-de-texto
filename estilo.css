@@ -40,10 +40,10 @@ h1 {
     width: 300px;
     height: auto;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #Entrada {
-    flex: content;
     padding: 5px;
     margin: 5px;
     text-align: justify;
@@ -51,6 +51,9 @@ h1 {
     width: auto;
     max-height: 420px;
     border: none;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    resize: none;
 }
 
 .Texto-Salida {
