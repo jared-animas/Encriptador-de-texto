@@ -7,7 +7,7 @@ const copiar = document.getElementById("Copiar");
 const pegar = document.getElementById("Pegar");
 let letras = [ "e","i", "a", "o", "u"];
 let letras2 = [/e/g,/i/g, /a/g, /e/g, /o/g, /u/g];
-let cambio = ["enter","imes", "ai",  "ober", "ufat"];
+let cambio = ["enter","imes", "ai", "ober", "ufat"];
 
 function mostrar() {// muestra el Textarea donde se imprime el texto codificado/decodificado y muestra el boton copiar
   if (TextoEntrada.value.length != 0) {
