@@ -5,9 +5,9 @@ const botonDecodificar = document.getElementById("Decodificar");
 const borrar = document.getElementById("Limpiar");
 const copiar = document.getElementById("Copiar");
 const pegar = document.getElementById("Pegar");
-let letras = ["i", "a", "e", "o", "u"];
-let letras2 = [/i/g, /a/g, /e/g, /o/g, /u/g];
-let cambio = ["imes", "ai", "enter", "ober", "ufat"];
+let letras = [ "e","i", "a", "o", "u"];
+let letras2 = [/e/g,/i/g, /a/g, /e/g, /o/g, /u/g];
+let cambio = ["enter","imes", "ai",  "ober", "ufat"];
 
 function mostrar() {// muestra el Textarea donde se imprime el texto codificado/decodificado y muestra el boton copiar
   if (TextoEntrada.value.length != 0) {
@@ -77,8 +77,6 @@ function autosize(){
   var el = this;
   setTimeout(function(){
     el.style.cssText = 'height:auto; padding:0';
-    // for box-sizing other than "content-box" use:
-    // el.style.cssText = '-moz-box-sizing:content-box';
     el.style.cssText = 'height:' + el.scrollHeight + 'px';
   },0);
 }

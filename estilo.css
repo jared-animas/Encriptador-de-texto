@@ -124,13 +124,9 @@ h1 {
     font-size: 18px;
     font-weight: 800;
     font-style: italic;
-    text-decoration: none;
     padding: 14px 15px;
     border: 0px solid #000;
     border-radius: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: inset 0px 0px 10px 0px #2D2D2D;
 }
 
@@ -145,6 +141,8 @@ h1 {
 .boton:hover {
     background: linear-gradient(to right, #5482d0, #7d5ee3);
     background-color: #2365d8;
+    box-shadow: none;
+    border: 0px solid #000;
 }
 
 .boton:active {
