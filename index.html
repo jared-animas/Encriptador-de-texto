@@ -5,46 +5,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-	<title> Encriptador de texto </title>
+	<title> Encriptador de texto v2</title>
+	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-	<h1> Encriptador de texto </h1>
-	<form>
-		<div class="botones">
-			<input type="button" id="Codificar" class="boton" value="Codificar" />
-			<input type="button" id="Decodificar" class="boton" value="Decodificar" />
-			<br />
-			<input type="reset" id="Limpiar" class="boton" />
-		</div>
-
-		<div class="CuadrosTexto">
-			<div class="Texto-Entrada" id="textarea">
-				<textarea id="Entrada" placeholder="Ingrese un texto a trabajar... "></textarea>
-				<input type="button" id="Pegar" class="boton" value="Pegar" />
+	<header>
+		<h1>Encriptador de texto</h1>
+	</header>
+	<main>
+		<section class="contenedor-central">
+			<div class="contenedor-textos">
+				<div class="Texto-Entrada" id="textarea">
+					<textarea id="Entrada" placeholder="Ingrese un texto a trabajar... "></textarea>
+					<input type="button" id="Pegar" class="boton" value="Pegar" />
+				</div>
+				<div class="Texto-Salida">
+					<div class="contenedor-img-sin-texto">
+						<img id="Sin-Texto" src="SinTexto.png" alt="Sin-Texto">
+					</div>
+					<p id="Salida" style="display: none;"></p>
+					<input type="button" id="Copiar" class="boton" value="Copiar" style="display: none;" />
+				</div>
 			</div>
-			
-			<div class="Texto-Salida">
-				<img id="Sin-Texto" src="SinTexto.png" alt="Sin-Texto">
-				<p id="Salida" style="display: none;"></p>
-				<input type="button" id="Copiar" class="boton" value="Copiar" style="display: none;" />
+			<div class="contenedor-botones">
+				<input type="button" id="Codificar" class="boton" value="Codificar" />
+				<input type="button" id="Decodificar" class="boton" value="Decodificar" />
+				<input type="reset" id="Limpiar" class="boton" />
 			</div>
-		</div>
-
-		<footer class="presentacion">
-			<p>Pagina elaborada por: Jared Antelmo Animas Grimaldo. </p>
-			<label>Linkedin:  </label>
+		</section>
+	</main>
+	<footer class="presentacion">
+		<p class="nombre">Pagina elaborada por: Jared Antelmo Animas Grimaldo. </p>
+		<div class="redes">
+			<label for="linkedin">Linkedin: </label>
 			<a href="https://www.linkedin.com/in/jared-animas/">
-				<img style="margin: auto;" height="20px" src="IconoLinkedin.png" alt="Linkedin">  jared-animas</a>
-			<br>
-			<label>Github:  </label>
+				<img style="margin: auto;" height="20px" src="IconoLinkedin.png" alt="Linkedin"> jared-animas</a>
+			<label for="github">Github: </label>
 			<a href="https://github.com/jared-animas">
-				<img style="margin: auto;" height="20px" src="IconoGithub.png" alt="Github">  jared-animas</a>
-			<br>
-			<p>#challengeonecodificador5</p>
-		</footer>
-	</form>
+				<img style="margin: auto;" height="20px" src="IconoGithub.png" alt="Github"> jared-animas</a>
+		</div>
+		<p class="gato">#challengeonecodificador5</p>
+	</footer>
 </body>
 <script src="codigo.js"></script>
+
 </html>

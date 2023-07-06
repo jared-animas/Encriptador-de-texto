@@ -17,6 +17,7 @@ function mostrar() {// muestra el Textarea donde se imprime el texto codificado/
   } else {
     document.getElementById("Sin-Texto").style.display = "initial";
     document.getElementById("Copiar").style.display = "none";
+    document.getElementById("Entrada").style.display = "initial";
   }
 }
 
@@ -51,9 +52,11 @@ botonDecodificar.addEventListener("click", function () {// boton para decodifica
 });
 
 borrar.addEventListener("click", function () {// boton para borrar textos
-  document.getElementById("Salida").innerHTML = null;
-  document.getElementById("Entrada").innerHTML = null;
+  document.getElementById("Salida").innerHTML = TextoEntrada.value=null;
+  document.getElementById("Entrada").innerHTML = TextoEntrada.value=null;
   document.getElementById("Sin-Texto").style.display = "initial";
+  document.getElementById("Salida").style.display = "initial";
+  document.getElementById("Entrada").style.display = "initial";
   document.getElementById("Salida").style.display = "none";
   document.getElementById("Copiar").style.display = "none";
 });
@@ -78,5 +81,6 @@ function autosize(){
   setTimeout(function(){
     el.style.cssText = 'height:auto; padding:0';
     el.style.cssText = 'height:' + el.scrollHeight + 'px';
+    
   },0);
 }

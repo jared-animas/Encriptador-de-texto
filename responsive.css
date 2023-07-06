@@ -1,0 +1,32 @@
+/* =================================================================*/
+
+
+@media (max-width: 639px) {
+    .contenedor-textos {
+        width: auto;
+        margin: 10px;
+    }
+
+    .Texto-Entrada, .Texto-Salida {
+        width: 100%;
+    }
+
+    .contenedor-botones {
+        order: -1;
+        width: clamp(300px, 100%, 539px);
+    }
+
+    .presentacion label {
+        display: none;
+    }
+
+    footer {
+        position: unset;
+    }
+}
+
+@media (max-width:800px) {
+    footer {
+        position: unset;
+    }
+}
