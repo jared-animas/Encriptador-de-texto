@@ -47,7 +47,7 @@ botonCodificar.addEventListener("click", function () {// boton para codificar
 });
 
 botonDecodificar.addEventListener("click", function () {// boton para decodificar
-  document.getElementById("Salida").innerHTML = CodificarTexto(TextoEntrada.value);
+  document.getElementById("Salida").innerHTML = DecodificarTexto(TextoEntrada.value);
   mostrar();
 });
 
